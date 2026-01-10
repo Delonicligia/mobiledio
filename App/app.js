@@ -1,0 +1,15 @@
+import express from 'express';
+import UserRoute from './route/User.route.js';
+import ProdukRoute from './route/Produk.route.js';
+import cors from "cors";
+
+const app = express();
+
+app.use(cors());
+
+app.use(express.json());
+
+app.use("/user", UserRoute);
+app.use("/produk", ProdukRoute);
+
+export default app;
