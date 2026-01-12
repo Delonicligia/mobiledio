@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon App/server.js",
+    "start": "node App/server.js",
     "dev": "nodemon App/server.js"
   },
   "keywords": [],
